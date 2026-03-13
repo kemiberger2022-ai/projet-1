@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Boutique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ANIMALIA🐾 </h1>
+    <p>Everyone deserve a family</p>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <hr> </hr>
+        <li><a href="#footer-contact">Contact</a></li>
+      <hr> 
+      <div id="notif"></div>
+       <li class="cart-icon">🛒 <span id="cart-count">0</span>
+         <div id="cart-dropdown" class="cart-dropdown hidden">
+           <ul id="cart-items"></ul>
+           <p>Total : <span id="cart-total">0</span></p>
+           <button id="checkout">Passer commande</button>
+         </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+  </header>
+    
+    <section id="cart-page" class="hidden">
+      <h2>Votre panier🛒</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Animal</th>
+            <th>Prix</th>
+            <th>Quantité</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-table-body"></tbody>
+      </table>
+      <p>Total : <span id="cart-total">0XOF</span></p>
+      <button id="clear-cart">Vider le panier</button>
+     
+
+      <button id="checkout-btn">Commander</button>
+    </section>
+ <section id="checkout-section" style="display:none;">
+  <h2>Validation de commande</h2>
+  <form>
+    <label>Nom :</label>
+    <input type="text" name="nom"><br><br>
+
+    <label>Adresse :</label>
+    <input type="text" name="adresse"><br><br>
+
+    <label>Téléphone :</label>
+    <input type="text" name="telephone"><br><br>
+
+    <button type="submit">Valider</button>
+  </form>
+   <button id="back-to-cart" type="button">Retour au panier</button>
+</section>
+  </main>
+
+  <main>
+    <section class="products">
+      <h2>Nos Animaux</h2>
+      <input type="text" id="search-bar" placeholder="Rechercher un produit...">
+      <hr>
+<div id="product-list"></div>
+     </section>
+        </div>
+      <div class="product-list" id="product-list">
+        <!-- Les produits seront ajoutés ici par JavaScript -->
+      </div>
+  </main>
+
+  <footer id="footer-contact">
+    <p>Telephone : 76 659 59 52</p>
+        <p>E-mail: animalia2020@gmail.com</p>
+    <p>&copy; 2026 ANIMALIA - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
