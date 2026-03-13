@@ -7,28 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="notif"></div>
   <header>
-    <h1>ANIMALIA🐾 </h1>
-    <p>Everyone deserve a family</p>
+    <div class="header-brand">
+      <h1>ANIMALIA🐾</h1>
+      <p class="tagline">Everyone deserve a family</p>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Accueil</a></li>
-        <hr> </hr>
         <li><a href="#footer-contact">Contact</a></li>
-      <hr> 
-      <div id="notif"></div>
-       <li class="cart-icon">🛒 <span id="cart-count">0</span>
-         <div id="cart-dropdown" class="cart-dropdown hidden">
-           <ul id="cart-items"></ul>
-           <p>Total : <span id="cart-total">0</span></p>
-           <button id="checkout">Passer commande</button>
-         </div>
+        <li class="cart-icon">🛒 <span id="cart-count">0</span>
+          <div id="cart-dropdown" class="cart-dropdown hidden">
+            <ul id="cart-items"></ul>
+            <p>Total : <span id="cart-total">0</span></p>
+            <button id="checkout">Passer commande</button>
+          </div>
         </li>
       </ul>
     </nav>
-    <main>
   </header>
-    
+
+  <main>
     <section id="cart-page" class="hidden">
       <h2>Votre panier🛒</h2>
       <table>
@@ -48,6 +48,7 @@
 
       <button id="checkout-btn">Commander</button>
     </section>
+
  <section id="checkout-section" style="display:none;">
   <h2>Validation de commande</h2>
   <form>
@@ -64,19 +65,15 @@
   </form>
    <button id="back-to-cart" type="button">Retour au panier</button>
 </section>
-  </main>
 
-  <main>
     <section class="products">
       <h2>Nos Animaux</h2>
       <input type="text" id="search-bar" placeholder="Rechercher un produit...">
       <hr>
-<div id="product-list"></div>
-     </section>
-        </div>
-      <div class="product-list" id="product-list">
+      <div id="product-list">
         <!-- Les produits seront ajoutés ici par JavaScript -->
       </div>
+    </section>
   </main>
 
   <footer id="footer-contact">
