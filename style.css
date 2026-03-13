@@ -1,0 +1,275 @@
+body {
+  font-family: , sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-weight: bold
+}
+
+header {
+  background: orange;
+  color: white;
+  padding: 1rem;
+  text-align: right;
+}
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: rigth;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: italic;
+  text-align: left
+}
+
+#notif {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white; /* vert succès */
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+
+#notif.show {
+  opacity: 0.9;
+}
+
+.products {
+  padding: 1rem;
+  text-align: right;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 1px;
+  width: 10px
+  padding: 5rem;
+  box-shadow: 0 6px 7px rgba(0,0,0,0.1);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 9px;
+}
+
+.product h3 {
+  margin: 1rem 0;
+}
+
+.product p {
+  color: black;
+  margin: 2rem
+}
+
+
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px; /* espace entre les cartes */
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+
+button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.rem;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+button:hover {
+  background: orange;
+}
+
+.cart-icon {
+  position: left;
+  cursor: pointer;
+}
+
+.cart-icon.animate {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  55%   { transform: scale(1); }
+  50%  { transform: scale(1.3); }
+  100% { transform: scale(9); }
+}
+
+
+#cart-count {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+  margin-left: 0.9em;
+}
+
+.cart-dropdown {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  background: orange;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8rem;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+#cart-page {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-page th, #cart-page td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+
+
+
+#cart-page {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-page th, #cart-page td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#cart-page {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+  
+
+.hidden {
+  display: none;
+}
+
+#cart-page {
+  background: ;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-page th, #cart-page td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background: orange;
+  color: white;
+  text-align: left;
+  padding: 7rem;
+  margin-top: 19rem;
+}
+
+button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.8);
+  background: yellow;
+}
+@keyframes flash {
+  15% { background-color: #3498db; }
+  50% { background-color: #f1c40f; }
+  100% { background-color: #3498db; }
+}
+
+button.clicked {
+  animation: flash 0.9s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
